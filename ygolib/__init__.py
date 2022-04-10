@@ -1,0 +1,1 @@
+YGO_API_ENDPOINT = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
