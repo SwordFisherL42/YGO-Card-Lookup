@@ -32,4 +32,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          name: YGO Card Lookup ${{ github.ref_name }}
           artifacts: "YGO-Card-Lookup.zip"
