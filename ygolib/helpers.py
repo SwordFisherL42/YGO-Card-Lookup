@@ -10,6 +10,7 @@ def verify_download_directory():
         os.mkdir("./cards")
         print("Created /cards/ directory")
 
+
 def get_cached_image(img_url):
     img_file = img_url.split("/")[-1]
     print(f"image {img_file}", end=" ")
