@@ -1,4 +1,4 @@
-name: Build YGO Lookup Application
+name: Build Application
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
           python -m PyInstaller app.spec
       - name: ZIP Release Package
         run: |
-          7z a YGO-Lookup.zip dist/* -r
+          7z a YGO-Card-Lookup.zip dist/* -r
       - name: Debug Directory Structure
         run: ls -R
       - name: Create Release
@@ -32,4 +32,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          artifacts: "YGO-Lookup.zip"
+          artifacts: "YGO-Card-Lookup.zip"
